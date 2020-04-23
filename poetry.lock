@@ -1,0 +1,132 @@
+[[package]]
+category = "main"
+description = "Native Python ASPRS LAS read/write library"
+name = "laspy"
+optional = false
+python-versions = "*"
+version = "1.7.0"
+
+[package.dependencies]
+numpy = "*"
+
+[[package]]
+category = "main"
+description = "LAS 1.0/1.1/1.2 LiDAR data format translation"
+name = "liblas"
+optional = false
+python-versions = "*"
+version = "1.8.1"
+
+[package.dependencies]
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "NumPy is the fundamental package for array computing with Python."
+name = "numpy"
+optional = false
+python-versions = ">=3.5"
+version = "1.18.3"
+
+[[package]]
+category = "main"
+description = "Seamless operability between C++11 and Python"
+name = "pybind11"
+optional = false
+python-versions = "*"
+version = "2.5.0"
+
+[[package]]
+category = "main"
+description = "Python .e57 files reader/writer"
+name = "pye57"
+optional = false
+python-versions = ">=3.5.*"
+version = "0.2.3"
+
+[package.dependencies]
+numpy = "*"
+pybind11 = "*"
+pyquaternion = "*"
+
+[[package]]
+category = "main"
+description = "Las/Laz reading and writing in python"
+name = "pylas"
+optional = false
+python-versions = ">=3.6"
+version = "0.4.2"
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+dev = ["pytest", "sphinx", "sphinx-rtd-theme"]
+lazperf = ["lazperf (>=1.3.0)"]
+lazrs = ["lazrs (>=0.1.0)"]
+
+[[package]]
+category = "main"
+description = "A fully featured, pythonic library for representing and using quaternions."
+name = "pyquaternion"
+optional = false
+python-versions = "*"
+version = "0.9.5"
+
+[package.dependencies]
+numpy = "*"
+
+[metadata]
+content-hash = "c64a890e7f209c68ce2250ee110a582f2e87ce0194d297546f9b75854ed4dcc7"
+python-versions = "^3.6.10"
+
+[metadata.files]
+laspy = [
+    {file = "laspy-1.7.0-py2.py3-none-any.whl", hash = "sha256:5f088a0d6fbfca3333870acb7997f54fc8fead4fdf43b75add9a4a4f839e538d"},
+    {file = "laspy-1.7.0.tar.gz", hash = "sha256:f2a354fe08a399949fce1a91019f70136ec396b1f88462e54f23b7a12ef2addf"},
+]
+liblas = [
+    {file = "libLAS-1.8.1.tar.gz", hash = "sha256:4d517670912989a0c7a33bb057167747e1013db6abdaa372f0775343ff0d1e16"},
+]
+numpy = [
+    {file = "numpy-1.18.3-cp35-cp35m-macosx_10_9_intel.whl", hash = "sha256:a6bc9432c2640b008d5f29bad737714eb3e14bb8854878eacf3d7955c4e91c36"},
+    {file = "numpy-1.18.3-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:48e15612a8357393d176638c8f68a19273676877caea983f8baf188bad430379"},
+    {file = "numpy-1.18.3-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:eb2286249ebfe8fcb5b425e5ec77e4736d53ee56d3ad296f8947f67150f495e3"},
+    {file = "numpy-1.18.3-cp35-cp35m-win32.whl", hash = "sha256:1e37626bcb8895c4b3873fcfd54e9bfc5ffec8d0f525651d6985fcc5c6b6003c"},
+    {file = "numpy-1.18.3-cp35-cp35m-win_amd64.whl", hash = "sha256:163c78c04f47f26ca1b21068cea25ed7c5ecafe5f5ab2ea4895656a750582b56"},
+    {file = "numpy-1.18.3-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:3d9e1554cd9b5999070c467b18e5ae3ebd7369f02706a8850816f576a954295f"},
+    {file = "numpy-1.18.3-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:40c24960cd5cec55222963f255858a1c47c6fa50a65a5b03fd7de75e3700eaaa"},
+    {file = "numpy-1.18.3-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:a551d8cc267c634774830086da42e4ba157fa41dd3b93982bc9501b284b0c689"},
+    {file = "numpy-1.18.3-cp36-cp36m-win32.whl", hash = "sha256:0aa2b318cf81eb1693fcfcbb8007e95e231d7e1aa24288137f3b19905736c3ee"},
+    {file = "numpy-1.18.3-cp36-cp36m-win_amd64.whl", hash = "sha256:a41f303b3f9157a31ce7203e3ca757a0c40c96669e72d9b6ee1bce8507638970"},
+    {file = "numpy-1.18.3-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:e607b8cdc2ae5d5a63cd1bec30a15b5ed583ac6a39f04b7ba0f03fcfbf29c05b"},
+    {file = "numpy-1.18.3-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:fdee7540d12519865b423af411bd60ddb513d2eb2cd921149b732854995bbf8b"},
+    {file = "numpy-1.18.3-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:6725d2797c65598778409aba8cd67077bb089d5b7d3d87c2719b206dc84ec05e"},
+    {file = "numpy-1.18.3-cp37-cp37m-win32.whl", hash = "sha256:4847f0c993298b82fad809ea2916d857d0073dc17b0510fbbced663b3265929d"},
+    {file = "numpy-1.18.3-cp37-cp37m-win_amd64.whl", hash = "sha256:46f404314dbec78cb342904f9596f25f9b16e7cf304030f1339e553c8e77f51c"},
+    {file = "numpy-1.18.3-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:264fd15590b3f02a1fbc095e7e1f37cdac698ff3829e12ffdcffdce3772f9d44"},
+    {file = "numpy-1.18.3-cp38-cp38-manylinux1_i686.whl", hash = "sha256:e94a39d5c40fffe7696009dbd11bc14a349b377e03a384ed011e03d698787dd3"},
+    {file = "numpy-1.18.3-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:a4305564e93f5c4584f6758149fd446df39fd1e0a8c89ca0deb3cce56106a027"},
+    {file = "numpy-1.18.3-cp38-cp38-win32.whl", hash = "sha256:99f0ba97e369f02a21bb95faa3a0de55991fd5f0ece2e30a9e2eaebeac238921"},
+    {file = "numpy-1.18.3-cp38-cp38-win_amd64.whl", hash = "sha256:c60175d011a2e551a2f74c84e21e7c982489b96b6a5e4b030ecdeacf2914da68"},
+    {file = "numpy-1.18.3.zip", hash = "sha256:e46e2384209c91996d5ec16744234d1c906ab79a701ce1a26155c9ec890b8dc8"},
+]
+pybind11 = [
+    {file = "pybind11-2.5.0-py2.py3-none-any.whl", hash = "sha256:205d9f9615eac190811cb8c3c2b2f95f6844ddba0fa0a1d45d00793338741601"},
+    {file = "pybind11-2.5.0.tar.gz", hash = "sha256:ea5a4e7a880112915463826f1acbec5892df36dfe102ecb249229ac514fb54ad"},
+]
+pye57 = [
+    {file = "pye57-0.2.3-cp35-cp35m-win32.whl", hash = "sha256:39f42f69f477d2e5039ad286b9653bcda0c8e6a2c907b100dd2320cf806d2f3e"},
+    {file = "pye57-0.2.3-cp35-cp35m-win_amd64.whl", hash = "sha256:6bb6a008bdb35744778bebe2b559fe75ad34d7d31205df002fb4f7143d92cfc8"},
+    {file = "pye57-0.2.3-cp36-cp36m-win32.whl", hash = "sha256:f8477d93dbf8ca2345c1e373322fd1e4fed7690510af24b44ac9d925f0cadb94"},
+    {file = "pye57-0.2.3-cp36-cp36m-win_amd64.whl", hash = "sha256:e79b773e31870e2f18d02fb8e2f827b4b8dfa1afcda982b7aff02759b39495af"},
+    {file = "pye57-0.2.3.tar.gz", hash = "sha256:d4c51803af76ebd34a4d3b0e7d24d562e5689b9dbe933b8ee090c43aee458b6e"},
+]
+pylas = [
+    {file = "pylas-0.4.2.tar.gz", hash = "sha256:1abe354d24067799cd4415730ac4faa413632db9d28a0d6787bd119fba78b2e6"},
+]
+pyquaternion = [
+    {file = "pyquaternion-0.9.5-py2-none-any.whl", hash = "sha256:9da8a22375783c1d5f2d65d195b4eb6c1ce2c5a5cab4700860b3bacc4dacb460"},
+    {file = "pyquaternion-0.9.5-py3-none-any.whl", hash = "sha256:bac5945d08b9a2f4106dc76206e40f353c7240fdf37a370e13b03113c135f59b"},
+    {file = "pyquaternion-0.9.5.tar.gz", hash = "sha256:2d89d19259d62a8fbd25219eee7dacc1f6bb570becb70e1e883f622597c7d81d"},
+]
