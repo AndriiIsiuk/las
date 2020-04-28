@@ -9,6 +9,8 @@ python = "^3.6.10"
 pylas = "^0.4.2"
 colours = "^0.3"
 opencv-python = "^4.2.0"
+liblas = "^1.8.1"
+laspy = "^1.7.0"
 
 [tool.poetry.dev-dependencies]
 
